@@ -1,0 +1,12 @@
+{
+    "name": "labsroom/projec-harga-barang",
+    "authors": [
+        {
+            "name": "intan",
+            "email": "dointan0506@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "6.5"
+    }
+}

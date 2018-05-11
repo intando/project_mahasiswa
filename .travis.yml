@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - '7.0'
+
+env:
+  global:
+    - 'FTP_USER=intando11'
+    - 'FTP_PASS=ido11101998' 
+
+script:
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html'"
+  - "curl -T coba.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_edit_form.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_main.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_simpan_baru.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
+  - "curl -T uts_koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/"
